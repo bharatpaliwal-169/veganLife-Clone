@@ -43,8 +43,12 @@ header{
 
 .active{
   border-bottom: 1px solid white;
+  color: rgba(220, 235, 13, 0.808)!important;
 }
 .fab{
   font-size: 2rem;
   color:blanchedalmond;
+}
+.navbar-brand, .nav-item{
+  color: blanchedalmond!important;
 }
