@@ -8,164 +8,200 @@
   <meta name="description" content="Spreading awareness about vegansim and delivering pure vegan food in India..">
   <title>Best Vegan Services in India &bull;</title>
   <link rel="shortcut icon" href="./images/favicon.ico">
-  <!-- styles -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/5ba01f7dd3.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="preload" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/main.css">
+  <!-- Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <!-- Compiled and minified JavaScript -->
+  
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-  <nav class="navbar  navbar-expand-md navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" alt="logo" width="36" height="30" class="d-inline-block align-text-top">
-        Vegan Lifestyle
-      </a>
-      
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#NSC" aria-controls="NSC" aria-expanded="false"
-              aria-label="Toggle navigation"
-      >
-      <!-- icon of the button on mobile -->
-        <span class="navbar-toggler-icon"></span>
+<body>
+<header>
+    <!-- nav -->
+    <nav class="teal lighten-2" role="navigation">
+      <div class="nav-wrapper container navbar-fixed"> 
+          <a id="logo-container" href="index.html" class="brand-logo">
+            Vegan Lifestyle
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#why">Why</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>  
         
-      </button>
-      <div class="collapse navbar-collapse" id="NSC">
-        <ul class="navbar-nav me-auto ">
-        </ul>
         
-        <ul class='navbar-nav'>
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Our Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#why">Why  Go Vegan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
-          </li>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#why">Why</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
-    </div>
-  </nav>
+    </nav>
+    
+    
+    <!-- end nav -->
+</header>
+
+<main>
 
   <!-- landing page -->
-  <header id="home">
-    <div class="col-12 banner-center text-center align-items-center user-select-none" 
-          data-aos='zoom-in' data-aos-duration='3000'>
-      <h1 class="display-2" >
-        <strong>Welcome to the VEGAN World!!</strong>
-      </h1>
-      <h4 class='mt-4'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Culpa suscipit eius est accusantium quidem reprehenderit recusandae cumque.
-      </h4>
-      <h3 class='mt-4'>
-        Food | Accessories | More
-      </h3>
-      <div class="col-8 col-sm-4  mt-5">
-        <a class="nav-link ex" href="#services">Explore</a>
-      </div>
-    </div>
-  </header>
+  <div class="landing parallax-container">
 
+    <div class="container  parallax">
+      <section class="col s12 center-align section scrollspy" id='home'>
+        <h1 class=''>
+          <strong class='green-text text-accent-4'>Welcome to the VEGAN World!!</strong>
+        </h1>
+        <p class='flow-text light-green-text text-darken-4'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Culpa suscipit eius est accusantium quidem reprehenderit recusandae cumque.
+        </p>
+        <h4 class='center-align light-green-text text-darken-4'>
+          Food | Accessories | More
+        </h4>
+        <div class="center-align">
+          <a class="waves-effect waves-light btn-large" href="#service">
+            Explore
+            <i class="material-icons right">expand_more</i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+    
+  
+  
+  
+  
   <!-- single page application || single container application -->
-  <div class="container-fluid" >
-    <div class="row text-center mt-5 align-items-center justify-content-center" id='services'>
-      <h1 class='display-3 mb-5 mt-5' >
+  <div class="container">
+    
+    <div class="col s12 center-align">
+      <h1>
         Our Services
       </h1>
+    </div>
+    <div class="row section scrollspy" id="service">
       
-      <div class="col-12 col-sm-3 p-2 ">
-        <div class="card">
-          <img src="./images/dairy.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dairy Products</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./images/dairy.jpg" alt="...">
           </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-3 p-2 ms-sm-5 me-sm-5">
-        <div class="card">
-          <img src="./images/dairy.jpg"  class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Bakery Products</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Dairy Products
+              <i class="material-icons right">expand_less</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Dairy Products
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-3 p-2">
-        <div class="card">
-          <img src="./images/acc.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Accesories</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./images/dairy.jpg" alt="...">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Dairy Products
+                  <i class="material-icons right">expand_less</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Dairy Products
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col s12 m4">
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./images/dairy.jpg" alt="...">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Dairy Products
+                    <i class="material-icons right">expand_less</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Dairy Products
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
           </div>
+          
+          
         </div>
+        
       </div>
-    </div>
-
-    <!-- why vegan -->
-    <div class="row text-center mt-5 align-items-center justify-content-center" id='why'>
-      <div class="col-12 ">
-        <h1 class='display-3 mb-5 mt-5' >
-          Why Go Vegan ?
+      
+      <!-- why vegan -->
+      <div class="container">
+        <div class="row section scrollspy" id='why'>
+          <div class="col s12 center-align">
+            <h1>
+              Why Go Vegan ?
         </h1>  
-        <p class='mt-4 mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorum libero ullam. Facilis nihil nostrum corporis iure, praesentium quo quae expedita labore quas, modi perspiciatis omnis optio commodi magnam illum.</p>
-      </div>
-    
-      <div class="col-6">
-        <img src="./images/sheeps.jpg" alt="cow" class='img-fluid img-responsive'>
-      </div>
-      <div class="col-6">
-        <img src="./images/sheeps.jpg" alt="sheeps" class='img-fluid img-responsive'>
+        <p class='flow-text'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorum libero ullam. Facilis nihil nostrum corporis iure, praesentium quo quae expedita labore quas, modi perspiciatis omnis optio commodi magnam illum.</p>
+        </div>
+        
+        <div class="row">
+          <div class="col s6">
+            <img src="./images/sheeps.jpg" alt="cow" class='responsive-img'>
+          </div>
+          <div class="col s6">
+            <img src="./images/sheeps.jpg" alt="sheeps" class='responsive-img'>
+          </div>    
+        </div>
       </div>
     </div>
+    
+    
+</main>
 
-    <div class="row footer bg-dark mt-5" id='contact'>
-      <div class="col-12 col-sm-3 mt-5 offset-sm-1">
-        <h3>Contact Us</h3>
-        <p>
-          <i class="fas fab fa-envelope mb-4"></i> VeganLifestyle@gmail.com<br>
-          <i class="fab fa-whatsapp mb-4"></i> 9123456789<br>
-          <i class="fas fab fa-globe"></i> www.VeganLifestle.com
-        </p>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Footer Content</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
       </div>
-      <div class="col-12 col-sm-4 mt-5">
-        <h3>FAQ's</h3>
-        <p>
-            What is Veganism ?<br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, placeat.<br><br>
-            Difference betwen vegetarian and vegan<br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, placeat.<br>
-        </p>
-      </div>
-      <div class="col-12 col-sm-4 mt-5">
-        <h3>Connect with Us</h3>
-        <ul class='nav'>
-          <li> <a href="#contact" class="nav-link"> <i class="fab fa-facebook-square"></i> </a></li>
-          <li> <a href="#contact" class="nav-link"> <i class="fab fa-instagram-square"></i></a></li>
-          <li> <a href="#contact" class="nav-link"> <i class="fab fa-linkedin"></i> </a></li>
-          
-          
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class='material-icons'>facebook</i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class='material-icons'>facebook</i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class='material-icons'>facebook</i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class='material-icons'>facebook</i></a></li>
         </ul>
-      </div>
-      <div class="col-12 text-center">
-        <h5 class='text-muted'>&copy; Himakkshi Jain(Minku)</h5>
       </div>
     </div>
   </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2021 Copyright Text
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
+
   
-  <!-- bootstrap complete bundle  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./js/main.js"></script>
+  
+  <!-- scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./scripts/material.js"></script>
 </body>
 </html>
