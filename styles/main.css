@@ -1,54 +1,8 @@
-body{
-  position: relative;
-}
-
-header{
+.landing{
   height: 100vh;
-  background: url('../images/bg1.png') ;
+  background-image: url('../images/bg.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
-}
-.banner-center{
-  height: 90vh;
-  color:rgb(48, 31, 7);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  letter-spacing: 1.2px;
-}
-.ex{
-  border: 1px solid #0f0f0f;
-  cursor: pointer;
-  border-radius: 9999px;
-  font-weight: bold;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  color:rgb(48, 31, 7)!important;
-
-}
-.ex:hover{
-  background: transparent;
-  box-shadow:  3px 3px 9px #555156, 
-            -3px -3px 9px #716b72;
-  color: #464b01!important;
-  transform: scale(1.2);
-  transition: transform 1s;
-}
-
-.footer{
-  color: blanchedalmond;
-}
-
-.active{
-  border-bottom: 1px solid white;
-  color: rgba(220, 235, 13, 0.808)!important;
-}
-.fab{
-  font-size: 2rem;
-  color:blanchedalmond;
-}
-.navbar-brand, .nav-item{
-  color: blanchedalmond!important;
+  opacity: 0.9;
 }
